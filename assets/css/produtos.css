@@ -1,0 +1,555 @@
+.produto {
+  display: flex;
+  position: relative;
+  margin-top: 80px;
+  padding: 0 5% 0 5%;
+}
+
+.produto__img--slide {
+  width: calc(50% - 40px);
+}
+
+.slide {
+  width: 100%;
+  display: none;
+  border-radius: 5px;
+}
+
+.slide:first-child {
+  width: 100%;
+  display: block;
+}
+
+.nav__produtos {
+  margin-top: 8px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.produto__img--btn {
+  width: 30%;
+  display: inline-block;
+  border-radius: 5px;
+}
+
+.opacidade {
+  opacity: 0.6;
+}
+
+.opacidade-off {
+  opacity: 1;
+}
+
+.opacidade-off-hover:hover {
+  opacity: 1;
+}
+
+.btn__produto {
+  width: 100%;
+  cursor: pointer;
+}
+
+.produto__info {
+  margin-left: 40px;
+  width: calc(50% - 40px);
+}
+
+.produto__nome {
+  font-family: "Spectral", serif;
+  font-weight: 700;
+  color: #1c0005;
+  letter-spacing: -2px;
+  font-size: 2.5rem;
+  line-height: 3rem;
+}
+
+.produto__opcoes {
+  margin-top: 20px;
+  display: flex;
+}
+
+/* Customize the label (the container) */
+.produtos__tipos {
+  display: block;
+  position: relative;
+  padding: 10px 10px 10px 38px;
+  margin-bottom: 12px;
+  margin-right: 20px;
+  background-color: #cecece;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.produtos__tipos:first-child {
+  background-color: #ffffff;
+  box-shadow: 0px 2px 5px rgba(28, 0, 5, 0.25);
+}
+
+/* Esconder checkbox padrão do browser*/
+.produtos__tipos input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom radio button */
+.radiobtn {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  height: 20px;
+  width: 20px;
+  border: inset 2px #1c0005;
+  background-color: #cecece;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.produtos__tipos:hover input ~ .radiobtn {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.produtos__tipos.ativo .radiobtn {
+  background-color: #ffffff;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.radiobtn:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.produtos__tipos input:checked ~ .radiobtn:after {
+  display: block;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.produtos__tipos.ativo .radiobtn:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.produtos__tipos .radiobtn:after {
+  top: 6px;
+  left: 6px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #1c0005;
+}
+
+/* INFORMAÇÕES PRODUTO */
+.produto__sobre {
+  width: 100%;
+}
+.produto__sobre--desc {
+  display: flex;
+  margin-top: 20px;
+}
+
+.icone__desc {
+  height: 24px;
+  width: 24px;
+}
+
+.produto__sobre--texto {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 400;
+  color: #474747;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.info__extra {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  color: #888888;
+  margin-top: 20px;
+}
+
+.btncomprar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 200px;
+  padding: 10px;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  background-image: linear-gradient(#490519, #2e0109);
+  margin-top: 20px;
+}
+
+.cart {
+  height: 24px;
+  width: 24px;
+  align-self: center;
+}
+
+.info__bonina {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #1c0005;
+  margin-top: 20px;
+}
+
+.produto__dec {
+  background: url(/assets/img/dec-cinza.svg) no-repeat center / cover;
+  position: absolute;
+}
+
+@media screen and (min-width: 0px) {
+  .produto {
+    margin-top: 20px;
+  }
+
+  .produto__img--slide {
+    width: calc(50% - 8px);
+  }
+
+  .produto__info {
+    margin-left: 8px;
+    width: calc(50% - 8px);
+  }
+
+  .produto__nome {
+    letter-spacing: 0px;
+    font-size: 1.15rem;
+    line-height: 1.5rem;
+  }
+
+  /* Customize the label (the container) */
+  .produtos__tipos {
+    padding: 4px 4px 4px 20px;
+    margin-bottom: 12px;
+    margin-right: 4px;
+    font-size: 0.65rem;
+  }
+
+  /* Create a custom radio button */
+  .radiobtn {
+    top: 4px;
+    left: 4px;
+    height: 6px;
+    width: 6px;
+    border: inset 2px #1c0005;
+    background-color: #cecece;
+    border-radius: 50%;
+  }
+
+  /* When the radio button is checked, add a blue background */
+  .produtos__tipos.ativo .radiobtn {
+    background-color: #ffffff;
+  }
+
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  .radiobtn:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+  /* Show the indicator (dot/circle) when checked */
+  .produtos__tipos input:checked ~ .radiobtn:after {
+    display: block;
+  }
+
+  /* Show the indicator (dot/circle) when checked */
+  .produtos__tipos.ativo .radiobtn:after {
+    display: block;
+  }
+
+  /* Style the indicator (dot/circle) */
+  .produtos__tipos .radiobtn:after {
+    top: 2px;
+    left: 2px;
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    background: #1c0005;
+  }
+
+  /* INFORMAÇÕES PRODUTO */
+  .produto__sobre--desc {
+    margin-top: 8px;
+  }
+
+  .icone__desc {
+    height: 16px;
+    width: 16px;
+  }
+
+  .produto__sobre--texto {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+
+  .info__extra {
+    font-size: 0.5rem;
+    line-height: 0.75rem;
+    color: #888888;
+    margin-top: 20px;
+  }
+
+  .btncomprar {
+    width: 100%;
+    padding: 4px;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-top: 8px;
+  }
+
+  .cart {
+    height: 24px;
+    width: 24px;
+    align-self: center;
+  }
+
+  .info__bonina {
+    font-size: 0.75rem;
+    line-height: 1rem;
+    color: #1c0005;
+    margin-top: 8px;
+  }
+
+  .produto__dec {
+    bottom: 40px;
+    right: initial;
+    left: 20px;
+    width: 2rem;
+    height: 2rem;
+  }
+}
+
+@media screen and (min-width: 758px) {
+  .produto {
+    display: flex;
+    position: relative;
+    margin-top: 80px;
+    padding: 0 5% 0 5%;
+  }
+
+  .produto__img--slide {
+    width: calc(50% - 40px);
+  }
+
+  .slide {
+    width: 100%;
+    display: none;
+    border-radius: 5px;
+  }
+
+  .slide:first-child {
+    width: 100%;
+    display: block;
+  }
+
+  .nav__produtos {
+    margin-top: 8px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .produto__img--btn {
+    width: 30%;
+    display: inline-block;
+    border-radius: 5px;
+  }
+
+  .opacidade {
+    opacity: 0.6;
+  }
+
+  .opacidade-off {
+    opacity: 1;
+  }
+
+  .opacidade-off-hover:hover {
+    opacity: 1;
+  }
+
+  .btn__produto {
+    width: 100%;
+    cursor: pointer;
+  }
+
+  .produto__info {
+    margin-left: 40px;
+    width: calc(50% - 40px);
+  }
+
+  .produto__nome {
+    font-family: "Spectral", serif;
+    font-weight: 700;
+    color: #1c0005;
+    letter-spacing: -2px;
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+
+  .produto__opcoes {
+    margin-top: 20px;
+    display: flex;
+  }
+
+  /* Customize the label (the container) */
+  .produtos__tipos {
+    display: block;
+    position: relative;
+    padding: 10px 10px 10px 38px;
+    margin-bottom: 12px;
+    margin-right: 20px;
+    background-color: #cecece;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  .produtos__tipos:first-child {
+    background-color: #ffffff;
+    box-shadow: 0px 2px 5px rgba(28, 0, 5, 0.25);
+  }
+
+  /* Esconder checkbox padrão do browser*/
+  .produtos__tipos input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+
+  /* Create a custom radio button */
+  .radiobtn {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    height: 20px;
+    width: 20px;
+    border: inset 2px #1c0005;
+    background-color: #cecece;
+    border-radius: 50%;
+  }
+
+  /* When the radio button is checked, add a blue background */
+  .produtos__tipos.ativo .radiobtn {
+    background-color: #ffffff;
+  }
+
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  .radiobtn:after {
+    content: " ";
+    position: absolute;
+    display: none;
+  }
+
+  /* Show the indicator (dot/circle) when checked */
+  .produtos__tipos.ativo .radiobtn:after {
+    display: block;
+  }
+
+  /* Show the indicator (dot/circle) when checked */
+  .produtos__tipos.ativo .radiobtn:after {
+    display: block;
+  }
+
+  /* Style the indicator (dot/circle) */
+  .produtos__tipos .radiobtn:after {
+    top: 6px;
+    left: 6px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #1c0005;
+  }
+
+  /* INFORMAÇÕES PRODUTO */
+  .produto__sobre {
+    width: 100%;
+  }
+  .produto__sobre--desc {
+    display: flex;
+    margin-top: 20px;
+  }
+
+  .icone__desc {
+    height: 24px;
+    width: 24px;
+  }
+
+  .produto__sobre--texto {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .info__extra {
+    font-size: 0.75rem;
+    line-height: 1rem;
+    margin-top: 20px;
+  }
+
+  .btncomprar {
+    width: 200px;
+    padding: 10px;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    margin-top: 20px;
+  }
+
+  .info__bonina {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-top: 20px;
+  }
+
+  .produto__dec {
+    bottom: 40px;
+    right: initial;
+    left: 40px;
+    width: 3rem;
+    height: 3rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .produto__dec {
+    bottom: 40px;
+    left: initial;
+    right: 40px;
+    width: 3rem;
+    height: 3rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .produto__dec {
+    bottom: 8px;
+    right: 40px;
+    width: 4rem;
+    height: 4rem;
+  }
+}

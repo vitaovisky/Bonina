@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width initial-scale=1.0">
+  <title>Bonina - Aromas</title>
+  <meta name=”description” content="Somos uma loja de aromas e fragâncias preocupada em manter a qualidade dos produtos, pensados e confeccionados em laboratórios profissionais para te entregar tranquilidade e equilíbrio. Com todos os processos realizados artesanalmente e produções em pequena escala, priorizamos sua experiência com o aroma. 
+  ">
+  <meta property="og:title" content="" />
+  <meta property="og:type" content="website" />
+  <meta property="og:description" content="" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="" />
+  <meta property="og:image:width" content="512" />
+  <meta property="og:image:height" content="512" />
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@bonina" />
+  <meta name="twitter:title" content="" />
+  <meta name="twitter:description" content="" />
+  <meta name="twitter:image" content="" />
+  <meta name="twitter:image:alt" content="" />
+
+  <script src="https://kit.fontawesome.com/a4e505b444.js" crossorigin="anonymous"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500&family=Spectral:wght@700&display=swap" rel="stylesheet">
+
+  <script src="assets/scripts/menu.js" defer></script>
+  <script src="assets/scripts/dropdown.js" defer></script>
+
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/header.css">
+  <link rel="stylesheet" href="assets/css/principal.css">
+  <link rel="stylesheet" href="assets/css/sobre.css">
+  <link rel="stylesheet" href="assets/css/contato.css">
+  <link rel="stylesheet" href="assets/css/footer.css">
+
+  <link href="/assets/img/favicon.png" rel="icon">
+</head>
+
+<body>
+  <header>
+    <div class="header--bg">
+      <a href="index.html" class="header--home"><img src="assets/img/LOGO BRANCA PNG.png" alt="" class="header--logo"></a>
+      <nav id="nav" class="navbar">
+        <button aria-label="Abrir menu" aria-haspopup="true" id="btn-mobile" aria-expanded="false">
+          <span id="hamburguer"></span>
+        </button>
+        <div id="links" class="links">
+          <a href="index.html#contato" id="link__contato" class="link__contato">Contato</a>
+          <div id="botao__dropdown--main" href="" class="cabecalho__links dropdown">
+            <div id="toggleon" class="quemsomos__link--container"><button class="dropbtn">Produtos</button><i class="fa-solid fa-caret-down"></i></div>
+            <div class="dropdown-content">
+              <a href="agua-perfumada.html">Água Perfumada</a>
+              <a href="aromatizantes.html">Aromatizantes</a>
+              <a href="hidratante.html">Hidratante</a>
+              <a href="sabonete.html">Sabonetes</a>
+              <a href="vela.html">Velas</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+  </header>
+  <main>
+    <section class="principal">
+      <img src="/assets/img/boninaimg.jpeg" alt="" class="principal__imagem">
+      <div class="principal__bg">
+        <h2 class="principal__titulo">Bonina, inovação em essências e produtos de cuidado pessoal.</h2>
+        <h3 class="principal__descricao">Os melhores aromas do Brasil, produzidos especialmente para você e sua casa.</h3>
+      </div>
+      <div alt="" class="principal__dec"></div>
+    </section>
+    <section class="sobre">
+      <div class="sobre__container">
+        <div class="sobre__textos">
+          <h3 class="sobre__titulo">Sobre a Bonina</h3>
+          <p class="sobre__desc">Somos uma loja de aromas e fragâncias preocupada em manter a qualidade dos produtos, pensados e confeccionados em laboratórios profissionais para te entregar tranquilidade e equilíbrio. </p>
+          <p class="sobre__desc">Com todos os processos realizados artesanalmente e produções em pequena escala, priorizamos sua experiência com o aroma. </p>
+        </div>
+        <div alt="" class="sobre__dec"></div>
+        <img src="/assets/img/img2.jpeg" alt="" class="sobre__img">
+      </div>
+    </section>
+    <section id="contato" class="contato">
+      <div alt="" class="contato__dec"></div>
+      <div class="contato__orcamento">
+        <h2 class="orcamento__titulo">Orçamento</h2>
+        <form class="form__contato" action="">
+          <div class="div__form form__nome">
+            <label class="label__formulario" for="input__nome">Nome: </label>
+            <input class="formulario__input" placeholder="Seu nome" type="text" name="name">
+          </div>
+          <div class="div__form form__telefone">
+            <label class="label__formulario" for="input__telefone">Telefone: </label>
+            <input class="formulario__input" placeholder="(32)99999-9999" type="tel">
+          </div>
+          <div class="div__form form__email">
+            <label class="label__formulario" for="input__email">Email: </label>
+            <input class="formulario__input" placeholder="contato@email.com" type="email">
+          </div>
+          <div class="div__form form__assunto">
+            <label class="label__formulario" for="input__assunto">Assunto: </label>
+            <textarea class="formulario__input input__mensagem" placeholder="Sua mensagem..." name="" id="input__assunto" cols="30" rows="10"></textarea>
+          </div>
+          <button class="form__botao">Enviar <img class="btn__seta" src="/assets/img/seta.svg" alt=""></button>
+        </form>
+      </div>
+      <div class="contato__box">
+        <h2 class="contato__titulo">Contato</h2>
+        <a class="contato__texto" href="tel:+553299999-9999">Tel: (32) 9 9999-9999</a>
+        <a class="contato__texto" href="mailto:contato@boninaaromas.com.br" target="_blank">Email: contato@boninaaromas.com.br</a>
+        <div class="contato__social">
+          <a href="https://www.instagram.com/boninaaromas/" target="_blank" link__social"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://wa.me/5532999999999" target="_blank" class="link__social"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="https://www.facebook.com/bonina.aromas.5" target="_blank" class="link__social"><i class="fa-brands fa-facebook"></i></a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <footer>
+    <div class="footer__container">
+      <a href="index.html" class="footer__logo--link"><img src="/assets/img/LOGO BRANCA PNG.png" alt="" class="footer__logo"></a>
+      <div class="footer__contato">
+        <h2 class="footer__titulo">Contato</h2>
+        <a class="footer__texto" href="tel:+553299999-9999">Tel: (32) 9 9999-9999</a>
+        <a class="footer__texto" href="mailto:contato@boninaaromas.com.br" target="_blank">Email: boninaaromas@gmail.com</a>
+        <div class="footer__contato--social">
+          <a href="https://www.instagram.com/boninaaromas/" target="_blank" class="link__social"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://wa.me/5532999999999" target="_blank" class="link__social"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="https://www.facebook.com/bonina.aromas.5" target="_blank" class="link__social"><i class="fa-brands fa-facebook"></i></a>
+        </div>
+      </div>
+      <div class="footer__info">
+        <h2 class="footer__titulo">Links Úteis</h2>
+        <a class="footer__texto" href="https://www.magazineluiza.com.br/marcas/bonina-aromas/" target="_blank">Loja Magalu</a>
+        <a class="footer__texto" href="">Info extra</a>
+      </div>
+    </div>
+    <p class="creditos">Criado por <a href="" class="link--webest">Webest On</a> © - Alguns direitos reservados.</p>
+  </footer>
+</body>
+
+</html>

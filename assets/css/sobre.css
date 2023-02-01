@@ -1,0 +1,189 @@
+.sobre {
+  background-color: #768d66;
+  position: relative;
+}
+
+.sobre__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sobre__textos {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.sobre__titulo {
+  font-family: "Spectral", serif;
+  font-weight: 700;
+  color: #0a150a;
+  letter-spacing: -2px;
+}
+
+.sobre__desc {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 500;
+  color: #192b17;
+}
+
+.sobre__img {
+  border-radius: 5px;
+}
+
+.sobre__dec {
+  background: url(/assets/img/dec-verde.svg) no-repeat center / cover;
+  position: absolute;
+}
+
+@media screen and (min-width: 0px) {
+  .sobre {
+    margin-top: 20px;
+    padding: 20px 5% 20px 5%;
+  }
+
+  .sobre__textos {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .sobre__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .sobre__titulo {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .sobre__desc {
+    font-size: 0.75rem;
+    line-height: 1rem;
+    margin-top: 8px;
+  }
+
+  .sobre__img {
+    display: none;
+    height: 120px;
+    width: 120px;
+  }
+
+  .sobre__dec {
+    width: 1rem;
+    height: 1rem;
+    bottom: 8px;
+    left: initial;
+    right: 8px;
+  }
+}
+
+@media screen and (min-width: 758px) {
+  .sobre {
+    margin-top: 40px;
+    padding: 20px 5% 20px 5%;
+  }
+
+  .sobre__textos {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+
+  .sobre__titulo {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+
+  .sobre__desc {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-top: 40px;
+  }
+
+  .sobre__img {
+    display: block;
+    height: 240px;
+    width: 240px;
+  }
+
+  .sobre__dec {
+    width: 2rem;
+    height: 2rem;
+    bottom: 20px;
+    left: initial;
+    right: 8px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .sobre {
+    margin-top: 80px;
+    padding: 40px 5% 40px 5%;
+  }
+
+  .sobre__titulo {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+
+  .sobre__desc {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    margin-top: 20px;
+  }
+
+  .sobre__img {
+    height: 360px;
+    width: 360px;
+    border-radius: 5px;
+  }
+
+  .sobre__dec {
+    width: 3rem;
+    height: 3rem;
+    bottom: 40px;
+    left: 40px;
+    right: initial;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .sobre {
+    margin-top: 80px;
+    padding: 40px 5% 40px 5%;
+  }
+
+  .sobre__titulo {
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
+
+  .sobre__desc {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin-top: 40px;
+  }
+
+  .sobre__img {
+    height: 480px;
+    width: 480px;
+    border-radius: 5px;
+  }
+
+  .sobre__dec {
+    width: 4rem;
+    height: 4rem;
+    bottom: 40px;
+    left: 40px;
+    right: initial;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .sobre__titulo {
+    font-size: 4rem;
+    line-height: 4.5rem;
+  }
+}

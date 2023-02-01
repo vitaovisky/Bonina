@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width initial-scale=1.0">
+  <title>Bonina - Aromas</title>
+  <meta name=”description” content="Somos uma loja de aromas e fragâncias preocupada em manter a qualidade dos produtos, pensados e confeccionados em laboratórios profissionais para te entregar tranquilidade e equilíbrio. Com todos os processos realizados artesanalmente e produções em pequena escala, priorizamos sua experiência com o aroma. 
+  ">
+  <meta property="og:title" content="" />
+  <meta property="og:type" content="website" />
+  <meta property="og:description" content="" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="" />
+  <meta property="og:image:width" content="512" />
+  <meta property="og:image:height" content="512" />
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@bonina" />
+  <meta name="twitter:title" content="" />
+  <meta name="twitter:description" content="" />
+  <meta name="twitter:image" content="" />
+  <meta name="twitter:image:alt" content="" />
+
+  <script src="https://kit.fontawesome.com/a4e505b444.js" crossorigin="anonymous"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500&family=Spectral:wght@700&display=swap" rel="stylesheet">
+
+  <script src="assets/scripts/menu.js" defer></script>
+  <script src="assets/scripts/dropdown.js" defer></script>
+  <script src="/assets/scripts/slideproduto.js" defer></script>
+  <script src="/assets/scripts/radioprodutosaro.js" defer></script>
+
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/header.css">
+  <link rel="stylesheet" href="assets/css/produtos.css">
+  <link rel="stylesheet" href="assets/css/footer.css">
+
+  <link href="/assets/img/favicon.png" rel="icon">
+</head>
+
+<body>
+  <header>
+    <div class="header--bg">
+      <a href="index.html" class="header--home"><img src="assets/img/LOGO BRANCA PNG.png" alt="" class="header--logo"></a>
+      <nav id="nav" class="navbar">
+        <button aria-label="Abrir menu" aria-haspopup="true" id="btn-mobile" aria-expanded="false">
+          <span id="hamburguer"></span>
+        </button>
+        <div id="links" class="links">
+          <a href="index.html#contato" id="link__contato" class="link__contato">Contato</a>
+          <div id="botao__dropdown--main" href="" class="cabecalho__links dropdown">
+            <div id="toggleon" class="quemsomos__link--container"><button class="dropbtn">Produtos</button><i class="fa-solid fa-caret-down"></i></div>
+            <div class="dropdown-content">
+              <a href="agua-perfumada.html">Água Perfumada</a>
+              <a href="aromatizantes.html">Aromatizantes</a>
+              <a href="hidratante.html">Hidratante</a>
+              <a href="sabonete.html">Sabonetes</a>
+              <a href="vela.html">Velas</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+  </header>
+  <main>
+    <section id="produto-orquidea" class="produto">
+      <div class="produto__img--slide">
+        <img id="produto-img-principal-um" src="/assets/img/produtos/aromatizantes/orq1.jpg" alt="" class="slide">
+        <img id="produto-img-principal-dois" src="/assets/img/produtos/aromatizantes/orq2.jpg" alt="" class="slide">
+        <img id="produto-img-principal-tres" src="/assets/img/produtos/aromatizantes/orq3.jpg" alt="" class="slide">
+        <div class="nav__produtos">
+          <div class="produto__img--btn" onclick="currentDiv(1)"><img id="produto-img-slide-um" src="/assets/img/produtos/aromatizantes/orq1.jpg" alt="" class="btn__produto opacidade opacidade-off-hover" onclick="currentDiv(1)"></div>
+          <div class="produto__img--btn"><img id="produto-img-slide-dois" src="/assets/img/produtos/aromatizantes/orq2.jpg" alt="" class="btn__produto opacidade opacidade-off-hover" onclick="currentDiv(2)"></div>
+          <div class="produto__img--btn"><img id="produto-img-slide-tres" src="/assets/img/produtos/aromatizantes/orq3.jpg" alt="" class="btn__produto opacidade opacidade-off-hover" onclick="currentDiv(3)"></div>
+        </div>
+      </div>
+      <div class="produto__info">
+        <h2 class="produto__nome">Aromatizante</h2>
+        <div class="produto__opcoes">
+          <label id="produto__orquidea" class="produtos__tipos ativo">Orquídeas
+            <input id="orquidea" class="radio-checked" type="radio" name="radio">
+            <span id="radiobtn-orq" class="radiobtn"></span>
+          </label>
+          <label id="produto__folha" class="produtos__tipos">Folhas
+            <input id="folha" class="radio-checked" type="radio" name="radio">
+            <span id="radiobtn-folha" class="radiobtn"></span>
+          </label>
+          <label id="produto__raiz" class="produtos__tipos">Raízes
+            <input id="raiz" class="radio-checked" type="radio" name="radio">
+            <span id="radiobtn-raiz" class="radiobtn"></span>
+          </label>
+        </div>
+        <div class="produto__sobre">
+          <div class="produto__sobre--desc">
+            <img src="/assets/img/produtos/tempo.svg" alt="" class="icone__desc">
+            <p id="produto-tempo" class="produto__sobre--texto">Ideal para manter qualquer ambiente perfumado por longos períodos de forma consistente.</p>
+          </div>
+          <div class="produto__sobre--desc">
+            <img src="/assets/img/produtos/eco.svg" alt="" class="icone__desc">
+            <p id="produto-aroma" class="produto__sobre--texto">Blend de flores que traz notas das orquídeas chocolate,sapatinho,olho de boneca,barco entre outras.</p>
+          </div>
+          <p class="info__extra">Todos os processos realizados artesanalmente, priorizamos sua experiência com o aroma. </p>
+          <a id="btn-comprar" class="btncomprar" href="https://www.magazineluiza.com.br/difusor-de-varetas-orquideas-bonina-aromas/p/bjghgg25d7/me/difa/?seller_id=coboninaesf" target="_blank">Comprar Agora<img src="/assets/img/produtos/cart.svg" alt="" class="cart">
+          </a>
+          <p class="info__bonina">Esse é um produto da Bonina Aromas, somos uma loja de aromas e fragâncias preocupada em manter a qualidade dos produtos, pensados e confeccionados em laboratórios profissionais para te entregar tranquilidade e equilíbrio.</p>
+        </div>
+      </div>
+      </div>
+      <div alt="" class="produto__dec"></div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="footer__container">
+      <a href="index.html" class="footer__logo--link"><img src="/assets/img/LOGO BRANCA PNG.png" alt="" class="footer__logo"></a>
+      <div class="footer__contato">
+        <h2 class="footer__titulo">Contato</h2>
+        <a class="footer__texto" href="tel:+553299999-9999">Tel: (32) 9 9999-9999</a>
+        <a class="footer__texto" href="mailto:contato@boninaaromas.com.br" target="_blank">Email: boninaaromas@gmail.com</a>
+        <div class="footer__contato--social">
+          <a href="https://www.instagram.com/boninaaromas/" target="_blank" class="link__social"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://wa.me/5532999999999" target="_blank" class="link__social"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="https://www.facebook.com/bonina.aromas.5" target="_blank" class="link__social"><i class="fa-brands fa-facebook"></i></a>
+        </div>
+      </div>
+      <div class="footer__info">
+        <h2 class="footer__titulo">Links Úteis</h2>
+        <a class="footer__texto" href="https://www.magazineluiza.com.br/marcas/bonina-aromas/" target="_blank">Loja Magalu</a>
+        <a class="footer__texto" href="">Info extra</a>
+      </div>
+    </div>
+    <p class="creditos">Criado por <a href="" class="link--webest">Webest On</a> © - Alguns direitos reservados.</p>
+  </footer>
+</body>
+
+</html>

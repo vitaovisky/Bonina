@@ -1,0 +1,164 @@
+footer {
+  margin-top: 80px;
+  background-color: #490519;
+  padding: 40px 5% 20px 5%;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__logo {
+  height: 120px;
+}
+
+.footer__contato {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__titulo {
+  font-family: "Spectral", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: #cecece;
+  margin-bottom: 20px;
+}
+
+.footer__texto {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #cecece;
+  margin-bottom: 20px;
+  transition: 0.3s ease-in-out;
+}
+
+.footer__texto:hover {
+  transform: scale(1.02);
+  color: #ffffff;
+}
+
+.footer__contato--social .fa-brands {
+  font-size: 32px;
+  line-height: 40px;
+  color: #cecece;
+  margin-right: 20px;
+  transition: 0.3s ease-in-out;
+}
+
+.footer__contato--social .fa-brands:hover {
+  transform: scale(1.05);
+  color: #ffffff;
+}
+
+.footer__info {
+  display: flex;
+  flex-direction: column;
+}
+
+.creditos {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 400;
+  color: #888888;
+  font-size: 12px;
+}
+
+.link--webest:hover {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 400;
+  color: #888888;
+  font-size: 12px;
+  transition: 0.3s ease-in-out;
+}
+
+.link--webest:hover {
+  color: #ffffff;
+}
+
+@media screen and (min-width: 0px) {
+  footer {
+    margin-top: 20px;
+  }
+
+  .footer__logo {
+    height: 60px;
+  }
+
+  .footer__titulo {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: #cecece;
+    margin-bottom: 20px;
+  }
+
+  .footer__texto {
+    font-size: 0.5rem;
+    line-height: 0.75;
+    color: #cecece;
+    margin-bottom: 20px;
+    transition: 0.3s ease-in-out;
+  }
+
+  .footer__contato--social .fa-brands {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .creditos {
+    margin-top: 1rem;
+    font-size: 0.5rem;
+  }
+}
+
+@media screen and (min-width: 758px) {
+  footer {
+    margin-top: 40px;
+  }
+
+  .footer__logo {
+    height: 120px;
+  }
+
+  .footer__titulo {
+    font-size: 24px;
+    line-height: 32px;
+    color: #cecece;
+    margin-bottom: 20px;
+  }
+
+  .footer__texto {
+    font-size: 18px;
+    line-height: 24px;
+    color: #cecece;
+    margin-bottom: 20px;
+    transition: 0.3s ease-in-out;
+  }
+
+  .footer__contato--social .fa-brands {
+    font-size: 32px;
+    line-height: 40px;
+    color: #cecece;
+    margin-right: 20px;
+    transition: 0.3s ease-in-out;
+  }
+
+  .creditos {
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 400;
+    color: #888888;
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  footer {
+    margin-top: 80px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+}

@@ -1,0 +1,188 @@
+.principal {
+  position: relative;
+  display: flex;
+}
+
+.principal__imagem {
+  margin-left: 3%;
+  border-radius: 5px 0 5px 5px;
+}
+
+.principal__bg {
+  background: url(/assets/img/textura-de-papel-kraft-marrom-claro-para-o-fundo_8087-1877.jpg)
+    repeat center / cover;
+}
+
+.principal__titulo {
+  font-family: "Spectral", serif;
+  font-weight: 700;
+  color: #1c0005;
+  letter-spacing: -2px;
+}
+
+.principal__descricao {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 500;
+  color: #212121;
+}
+
+.principal__dec {
+  background: url(/assets/img/dec-cinza.svg) no-repeat center / cover;
+  position: absolute;
+}
+
+@media screen and (min-width: 0px) {
+  .principal {
+    margin-top: 20px;
+  }
+
+  .principal__imagem {
+    width: 140px;
+    height: 140px;
+  }
+
+  .principal__bg {
+    width: calc(97% - 140px);
+    height: 120px;
+  }
+
+  .principal__titulo {
+    font-size: 1.15rem;
+    line-height: 1.5rem;
+    margin: 8px 8px 0px 8px;
+  }
+
+  .principal__descricao {
+    font-size: 0.75rem;
+    line-height: 1rem;
+    margin: 8px 8px 20px 8px;
+  }
+
+  .principal__dec {
+    width: 1rem;
+    height: 1rem;
+    right: 8px;
+    bottom: 0px;
+  }
+}
+
+@media screen and (min-width: 758px) {
+  .principal {
+    margin-top: 40px;
+  }
+
+  .principal__imagem {
+    width: 262px;
+    height: 262px;
+  }
+
+  .principal__bg {
+    width: calc(97% - 262px);
+    height: 222px;
+  }
+
+  .principal__titulo {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    margin: 20px 40px 20px 40px;
+  }
+
+  .principal__descricao {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    margin: 0px 40px 40px 40px;
+  }
+
+  .principal__dec {
+    width: 2rem;
+    height: 2rem;
+    right: 8px;
+    bottom: 0px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .principal {
+    margin-top: 80px;
+  }
+
+  .principal__imagem {
+    width: 394px;
+    height: 394px;
+  }
+
+  .principal__bg {
+    width: calc(97% - 394px);
+    height: 334px;
+  }
+
+  .principal__titulo {
+    font-size: 2.5rem;
+    line-height: 3rem;
+    margin: 40px 120px 40px 40px;
+  }
+
+  .principal__descricao {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin: 0px 120px 40px 40px;
+  }
+
+  .principal__dec {
+    width: 3rem;
+    height: 3rem;
+    right: 20px;
+    bottom: 8px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .principal__imagem {
+    width: 524px;
+    height: 524px;
+  }
+
+  .principal__bg {
+    width: calc(97% - 524px);
+    height: 404px;
+  }
+
+  .principal__titulo {
+    font-size: 3rem;
+    line-height: 3.5rem;
+    margin: 40px 120px 40px 40px;
+  }
+
+  .principal__descricao {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin: 0px 120px 40px 40px;
+  }
+
+  .principal__dec {
+    width: 4rem;
+    height: 4rem;
+    right: 40px;
+    bottom: 40px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .principal__titulo {
+    font-size: 4rem;
+    line-height: 4.5rem;
+    margin: 40px 120px 40px 40px;
+  }
+
+  .principal__descricao {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+
+  .principal__dec {
+    width: 4rem;
+    height: 4rem;
+    right: 40px;
+    bottom: 40px;
+  }
+}
